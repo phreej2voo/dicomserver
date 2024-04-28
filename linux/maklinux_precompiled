@@ -1,0 +1,58 @@
+#!/bin/bash
+# mvh 20160425 for 1.4.19beta
+# mvh 20160516 use ln -s for shared server/webserver configs
+# mvh 20161117 back to cp, added chmod for src/dgate/jpeg-6c/configure 
+# mvh 20161122 Fixed order of newweb copy 
+# mvh 20170211 Fix include paths in mysql option 
+# mvh 20170504 Set rights for web folder; document mariadb lib link (but commented out)
+# mvh 20181117 Added luasocket to compile
+# mvh 20181125 make /usr/local/man.man1, add luasocket to mysql compile
+# mvh 20200109 Fixed to linux line endings
+# mvh 20200215 Config for external lua5.1 library (see LUA=)
+# mvh 20200216 No overwite dicom.ini/acrnema.map; external luasocket
+# mvh 20200226 Check lua.o etc exist before rm
+# mvh 20200304 Added precompiled option, also create .exe in web;
+# mvh 20200308 Write temp folder and conquest folders where needed;
+# mvh 20200310 Do overwrite dicom.ini, but make backup first
+# mvh 20200311 Lost mariadb change, use mariadb and mysql include folders for ubuntu14 compatibility
+
+export CONQUEST=$(pwd)
+export CONQUESTTEMP=$CONQUEST/temp
+[ ! -d $CONQUESTTEMP ] && mkdir $CONQUESTTEMP
+chmod 777 $CONQUESTTEMP
+export IP=$(hostname -I | xargs)
+
+SRC=./src/dgate;
+CONF=./linux/conf;
+LINUX=./linux;
+LUA="$SRC/lua.o $SRC/luasocket/luasocket.a";
+#LUA=-llua5.1;
+#LUA="-llua5.1 $SRC/luasocket/luasocket.a";
+FLAGS="-std=c++11 -DUNIX -DNATIVE_ENDIAN=1 -DHAVE_LIBJPEG -DHAVE_LIBCHARLS -DHAVE_LIBOPENJPEG2 -Wno-write-strings -Wno-multichar -Wno-format-overflow -Wno-deprecated-declarations";
+INCS="-I$SRC/dicomlib -ljpeg -lpthread -ldl -I$SRC/src -I$SRC/jpeg-6c -L$SRC/jpeg-6c -I$SRC/lua_5.1.5 -I$SRC/openjpeg -I$SRC/charls";
+OBS="$SRC/charls.o $SRC/openjpeg.o";
+
+#sudo mkdir /usr/local/man.man1
+chmod 777 src/dgate/jpeg-6c/configure
+cd src/dgate/jpeg-6c
+./configure
+make
+echo Please ignore the errors below
+sudo make install
+echo Please ignore the errors above
+cd ../../..
+
+chmod 777 src/dgate/luasocket/amake.sh;
+cd src/dgate/luasocket;
+./amake.sh;
+cd ../../..
+
+export opt='sqlite'
+
+#        "sqlite")
+			gcc -o $SRC/lua.o -c $SRC/lua_5.1.5/all.c -I$SRC/lua_5.1.5 -DLUA_USE_DLOPEN -DLUA_USE_POSIX;
+			gcc -c -DTHREADSAFE=1 -DHAVE_USLEEP $SRC/sqlite3/sqlite3.c -I$SRC/sqlite3 -o $SRC/sqlite3.o;
+			g++ -std=c++11 -o $SRC/charls.o -c $SRC/charls/all.cpp -I$SRC/charls -Wno-deprecated-declarations
+			gcc -o $SRC/openjpeg.o -c $SRC/openjpeg/all.c -I$SRC/openjpeg
+			g++ $FLAGS -DUSESQLITE $SRC/sqlite3.o $OBS -o dgate $SRC/src/total.cpp $LUA $INCS -I$SRC/sqlite3;
+			rm $SRC/sqlite3.o;

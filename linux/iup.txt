@@ -1,0 +1,75 @@
+-- install conquest on ubuntu18/19 server with access to web interface and iup GUI
+-- adapted for ubuntu19.10
+-- adapted for ubuntu18.04 LTS
+
+-- vmware specific, enable network:
+(temporary: sudo dhclient ens33, or fixed:)
+sudo nano /etc/netplan/xxx.yaml
+network:
+  version: 2
+  ethernets:
+    ens33:
+      dhcp4: yes
+sudo netplan -d apply
+sudo reboot now
+
+sudo apt update
+(if next two steps skipped must use precompiled option)
+(sudo apt install make)
+(sudo apt install g++)
+sudo apt install apache2
+sudo apt install p7zip-full
+sudo apt install unzip
+sudo a2enmod cgi
+sudo systemctl restart apache2
+sudo apt install lua5.1
+(precompiled: sudo apt install liblua5.1-0)
+(compiled: sudo apt install lua5.1-dev)
+sudo apt install lua-socket
+
+-- optional
+sudo apt install openssh-server
+
+-- optional
+sudo apt install firefox
+sudo apt install xterm
+export DISPLAY=192.168.31.1:0
+xterm
+
+VMWARE specific, enable NAT of SSH, take IP address from "ip a" in host
+C:\ProgramData\VMware\vmnetnat.conf
+[incomingtcp]
+8889 = 192.168.116.128:22
+Stop and Start VMware NAT service
+
+wget http://ingenium.home.xs4all.nl/dicomserver/dicomserver150a.zip
+mkdir conquest
+cd conquest
+unzip ../dicomserver150beta3.zip
+chmod 777 maklinux
+./maklinux
+(the precompiled dgate is built on Ubuntu14)
+
+mkdir iup
+wget -O iuplibs.tar.gz https://sourceforge.net/projects/iup/files/3.19.1/Linux%20Libraries/iup-3.19.1_Linux44_64_lib.tar.gz
+wget -O iuplualibs.tar.gz https://sourceforge.net/projects/iup/files/3.19.1/Linux%20Libraries/Lua51/iup-3.19.1-Lua51_Linux44_64_lib.tar.gz
+
+And to add the other libraries:
+
+https://sourceforge.net/projects/imtoolkit/files/3.14/Linux%20Libraries/im-3.14_Linux44_64_lib.tar.gz/download
+https://sourceforge.net/projects/imtoolkit/files/3.14/Linux%20Libraries/Lua51/im-3.14-Lua51_Linux44_64_lib.tar.gz/download
+https://sourceforge.net/projects/canvasdraw/files/5.14/Linux%20Libraries/cd-5.14_Linux44_64_lib.tar.gz/download
+https://sourceforge.net/projects/canvasdraw/files/5.14/Linux%20Libraries/Lua51/cd-5.14-Lua51_Linux44_64_lib.tar.gz/download
+
+cd iup
+tar xvf ../iuplibs.tar.gz
+tar xvf ../iuplualibs.tar.gz
+sudo ./install
+((export LUA_CPATH=./\?.so\;./lib\?.so\;./lib\?51.so\;))
+
+cd ../conquest/
+./dgate "--lua:package.cpath=package.cpath..';/usr/lib/lib?51.so';dofile('lua/console.wlua')"
+
+sudo e4defrag /
+dd if=/dev/zero of=wipefile bs=1M; sync; rm wipefile
+sudo vmware-toolbox-cmd disk shrinkonly

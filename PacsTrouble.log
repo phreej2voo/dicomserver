@@ -1,0 +1,54 @@
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE DICOMWorkList
+20240426 13:53:53 ***Error: Unknown table 'dicomworklist'
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE DICOMPatients
+20240426 13:53:53 ***Error: Unknown table 'dicompatients'
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE DICOMStudies
+20240426 13:53:53 ***Error: Unknown table 'dicomstudies'
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE DICOMSeries
+20240426 13:53:53 ***Error: Unknown table 'dicomseries'
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE DICOMImages
+20240426 13:53:53 ***Error: Unknown table 'dicomimages'
+20240426 13:53:53 ***Failed MYSQLExec : DROP TABLE UIDMODS
+20240426 13:53:53 ***Error: Unknown table 'uidmods'
+20240428 10:26:15 ***Cannot connect to MySQL on port 3306
+20240428 10:26:15 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:15 ***Cannot connect to MySQL on port 3306
+20240428 10:26:15 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:15 ***Error Connecting to SQL
+20240428 10:26:18 ***Cannot connect to MySQL on port 3306
+20240428 10:26:18 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:20 ***Cannot connect to MySQL on port 3306
+20240428 10:26:20 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:20 ***Error connecting datasource:conquest user:root password:password
+20240428 10:26:44 ***Cannot connect to MySQL on port 3306
+20240428 10:26:44 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:46 ***Cannot connect to MySQL on port 3306
+20240428 10:26:46 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:26:46 ***Error connecting datasource:conquest user:root password:password
+20240428 10:27:36 ***Cannot connect to MySQL on port 3306
+20240428 10:27:36 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:27:36 ***Error Connecting to SQL
+20240428 10:27:36 ***Cannot connect to MySQL on port 3306
+20240428 10:27:36 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:27:38 ***Cannot connect to MySQL on port 3306
+20240428 10:27:38 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:27:40 ***Cannot connect to MySQL on port 3306
+20240428 10:27:40 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 10:27:40 ***Error connecting datasource:conquest user:root password:password
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE DICOMWorkList
+20240428 10:50:48 ***Error: Unknown table 'dicomworklist'
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE DICOMPatients
+20240428 10:50:48 ***Error: Unknown table 'dicompatients'
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE DICOMStudies
+20240428 10:50:48 ***Error: Unknown table 'dicomstudies'
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE DICOMSeries
+20240428 10:50:48 ***Error: Unknown table 'dicomseries'
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE DICOMImages
+20240428 10:50:48 ***Error: Unknown table 'dicomimages'
+20240428 10:50:48 ***Failed MYSQLExec : DROP TABLE UIDMODS
+20240428 10:50:48 ***Error: Unknown table 'uidmods'
+20240428 11:09:54 ***Cannot connect to MySQL on port 3306
+20240428 11:09:54 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+20240428 11:09:54 ***Error Connecting to SQL
+20240428 11:09:54 ***Cannot connect to MySQL on port 3306
+20240428 11:09:54 ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)

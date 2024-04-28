@@ -1,0 +1,58 @@
+2024/4/26 13:44:01 starting conquestdicomserver
+2024/4/26 13:53:37 started dgate as threaded process
+2024/4/26 13:53:53 started database regeneration
+2024/4/26 13:54:11 cleared worklist
+2024/4/26 14:05:46 closing the server
+2024/4/28 10:26:12 starting conquestdicomserver
+2024/4/28 10:26:13 started dgate as threaded process
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:48 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:48 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:27:00 closing the server
+2024/4/28 10:27:33 starting conquestdicomserver
+2024/4/28 10:27:34 started dgate as threaded process
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:30:49 started database regeneration
+2024/4/28 10:31:13 closing the server
+2024/4/28 10:31:19 starting conquestdicomserver
+2024/4/28 10:31:20 started dgate as threaded process
+2024/4/28 10:36:36 closing the server
+2024/4/28 10:36:47 starting conquestdicomserver
+2024/4/28 10:36:48 started dgate as threaded process
+2024/4/28 10:37:44 started database regeneration
+2024/4/28 10:46:40 closing the server
+2024/4/28 10:50:09 starting conquestdicomserver
+2024/4/28 10:50:11 started dgate as threaded process
+2024/4/28 10:50:33 killed and restarted the server
+2024/4/28 10:50:47 started database regeneration
+2024/4/28 10:50:50 cleared worklist
+2024/4/28 11:05:56 closing the server
+2024/4/28 11:09:50 starting conquestdicomserver
+2024/4/28 11:09:51 started dgate as threaded process
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 11:09:56 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 11:09:56 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 11:43:02 closing the server

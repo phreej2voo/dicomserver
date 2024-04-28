@@ -1,0 +1,184 @@
+2024/4/26 13:53:38 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/26 13:53:38 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/26 13:53:38 [CONQUESTSRV1] Database type: native MySQL connection
+2024/4/26 13:53:40 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/26 13:53:40 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/26 13:53:47 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/26 13:57:57 [CONQUESTSRV1] 
+2024/4/26 13:57:57 [CONQUESTSRV1] UPACS THREAD 20: STARTED AT: Fri Apr 26 13:57:57 2024
+2024/4/26 13:57:57 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 13:57:57 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 13:57:57 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 13:57:57 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/26 13:57:57 [CONQUESTSRV1] C-Echo
+2024/4/26 13:57:57 [CONQUESTSRV1] UPACS THREAD 20: ENDED AT: Fri Apr 26 13:57:57 2024
+2024/4/26 13:57:57 [CONQUESTSRV1] UPACS THREAD 20: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/26 13:59:46 [CONQUESTSRV1] 
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 21: STARTED AT: Fri Apr 26 13:59:46 2024
+2024/4/26 13:59:46 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 13:59:46 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 13:59:46 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 13:59:46 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/26 13:59:46 [CONQUESTSRV1] C-Echo
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 21: ENDED AT: Fri Apr 26 13:59:46 2024
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 21: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/26 13:59:46 [CONQUESTSRV1] 
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 22: STARTED AT: Fri Apr 26 13:59:46 2024
+2024/4/26 13:59:46 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 13:59:46 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 13:59:46 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 13:59:46 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/26 13:59:46 [CONQUESTSRV1] C-Echo
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 22: ENDED AT: Fri Apr 26 13:59:46 2024
+2024/4/26 13:59:46 [CONQUESTSRV1] UPACS THREAD 22: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/26 13:59:47 [CONQUESTSRV1] 
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 23: STARTED AT: Fri Apr 26 13:59:47 2024
+2024/4/26 13:59:47 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 13:59:47 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 13:59:47 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 13:59:47 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/26 13:59:47 [CONQUESTSRV1] C-Echo
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 23: ENDED AT: Fri Apr 26 13:59:47 2024
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 23: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/26 13:59:47 [CONQUESTSRV1] 
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 24: STARTED AT: Fri Apr 26 13:59:47 2024
+2024/4/26 13:59:47 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 13:59:47 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 13:59:47 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 13:59:47 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/26 13:59:47 [CONQUESTSRV1] C-Echo
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 24: ENDED AT: Fri Apr 26 13:59:47 2024
+2024/4/26 13:59:47 [CONQUESTSRV1] UPACS THREAD 24: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/26 14:04:05 [CONQUESTSRV1] 
+2024/4/26 14:04:05 [CONQUESTSRV1] UPACS THREAD 25: STARTED AT: Fri Apr 26 14:04:05 2024
+2024/4/26 14:04:05 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/26 14:04:05 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/26 14:04:05 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/26 14:04:05 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.5.1.4.1.2.2.1" 1
+2024/4/26 14:04:05 [CONQUESTSRV1] (StudyRootQuery) search level: STUDY 
+2024/4/26 14:04:05 [CONQUESTSRV1] C-Find (StudyRoot) located 0 records
+2024/4/26 14:04:05 [CONQUESTSRV1] UPACS THREAD 25: ENDED AT: Fri Apr 26 14:04:05 2024
+2024/4/26 14:04:05 [CONQUESTSRV1] UPACS THREAD 25: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:26:20 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/28 10:26:20 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:20 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:20 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:48 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:26:48 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:26:48 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:27:40 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/28 10:27:40 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 10:27:40 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 10:27:40 [CONQUESTSRV1] ***Error connecting datasource:conquest user:root password:password
+2024/4/28 10:31:01 [CONQUESTSRV1] Re-reading acrnema.map from GUI
+2024/4/28 10:31:23 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/28 10:31:23 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:31:23 [CONQUESTSRV1] Database type: native MySQL connection
+2024/4/28 10:31:23 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:31:50 [CONQUESTSRV1] 
+2024/4/28 10:31:50 [CONQUESTSRV1] UPACS THREAD 1: STARTED AT: Sun Apr 28 10:31:50 2024
+2024/4/28 10:31:50 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 10:31:50 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 10:31:50 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 10:31:50 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 10:31:50 [CONQUESTSRV1] C-Echo
+2024/4/28 10:31:50 [CONQUESTSRV1] UPACS THREAD 1: ENDED AT: Sun Apr 28 10:31:50 2024
+2024/4/28 10:31:50 [CONQUESTSRV1] UPACS THREAD 1: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:36:24 [CONQUESTSRV1] 
+2024/4/28 10:36:24 [CONQUESTSRV1] UPACS THREAD 2: STARTED AT: Sun Apr 28 10:36:24 2024
+2024/4/28 10:36:24 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 10:36:24 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 10:36:24 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 10:36:24 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 10:36:24 [CONQUESTSRV1] C-Echo
+2024/4/28 10:36:24 [CONQUESTSRV1] UPACS THREAD 2: ENDED AT: Sun Apr 28 10:36:24 2024
+2024/4/28 10:36:24 [CONQUESTSRV1] UPACS THREAD 2: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:36:50 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/28 10:36:50 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:36:50 [CONQUESTSRV1] Database type: native MySQL connection
+2024/4/28 10:36:50 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:37:23 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:50:13 [CONQUESTSRV1] Monitoring for files in: D:\Program Files (x86)\dicomserver\Data\incoming\
+2024/4/28 10:50:13 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:50:13 [CONQUESTSRV1] Database type: native MySQL connection
+2024/4/28 10:50:13 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:50:38 [CONQUESTSRV1] Monitoring for files in: d:\program files (x86)\dicomserver\data\incoming\
+2024/4/28 10:50:38 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 10:50:38 [CONQUESTSRV1] Database type: native MySQL connection
+2024/4/28 10:50:38 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:50:38 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:50:38 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:50:44 [CONQUESTSRV1] updated UIDMODS table
+2024/4/28 10:50:44 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 10:52:16 [CONQUESTSRV1] 
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 11: STARTED AT: Sun Apr 28 10:52:16 2024
+2024/4/28 10:52:16 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 10:52:16 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 10:52:16 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 10:52:16 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 10:52:16 [CONQUESTSRV1] C-Echo
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 11: ENDED AT: Sun Apr 28 10:52:16 2024
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 11: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:52:16 [CONQUESTSRV1] 
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 12: STARTED AT: Sun Apr 28 10:52:16 2024
+2024/4/28 10:52:16 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 10:52:16 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 10:52:16 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 10:52:16 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 10:52:16 [CONQUESTSRV1] C-Echo
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 12: ENDED AT: Sun Apr 28 10:52:16 2024
+2024/4/28 10:52:16 [CONQUESTSRV1] UPACS THREAD 12: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:52:21 [CONQUESTSRV1] 
+2024/4/28 10:52:21 [CONQUESTSRV1] UPACS THREAD 13: STARTED AT: Sun Apr 28 10:52:21 2024
+2024/4/28 10:52:21 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 10:52:21 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 10:52:21 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 10:52:21 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 10:52:21 [CONQUESTSRV1] C-Echo
+2024/4/28 10:52:21 [CONQUESTSRV1] UPACS THREAD 13: ENDED AT: Sun Apr 28 10:52:21 2024
+2024/4/28 10:52:21 [CONQUESTSRV1] UPACS THREAD 13: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 10:52:48 [CONQUESTSRV1] 
+2024/4/28 10:52:48 [CONQUESTSRV1] UPACS THREAD 15: STARTED AT: Sun Apr 28 10:52:48 2024
+2024/4/28 10:52:48 [CONQUESTSRV1]  Calling Application Title : "CONQUESTSRV1    "
+2024/4/28 10:52:48 [CONQUESTSRV1]  Called Application Title : "CONQUESTSRV1    "
+2024/4/28 10:52:48 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 32768
+2024/4/28 10:52:48 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.5.1.4.1.2.1.1" 1
+2024/4/28 10:52:48 [CONQUESTSRV1] (PatientRootQuery) search level: PATIENT 
+2024/4/28 10:52:48 [CONQUESTSRV1] C-Find (PatientRoot) located 1 records
+2024/4/28 10:52:48 [CONQUESTSRV1] UPACS THREAD 15: ENDED AT: Sun Apr 28 10:52:48 2024
+2024/4/28 10:52:48 [CONQUESTSRV1] UPACS THREAD 15: TOTAL RUNNING TIME: 0 SECONDS
+2024/4/28 11:09:56 [CONQUESTSRV1] Monitoring for files in: d:\program files (x86)\dicomserver\data\incoming\
+2024/4/28 11:09:56 [CONQUESTSRV1] DGATE (1.5.0d, build Sun Jul 02 05:58:31 2023, bits 64) is running as threaded server
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 11:09:56 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Error Connecting to SQL
+2024/4/28 11:09:56 [CONQUESTSRV1] ***Cannot connect to MySQL on port 3306
+2024/4/28 11:09:56 [CONQUESTSRV1] ***MySQL Error message: Can't connect to MySQL server on 'localhost' (10061)
+2024/4/28 11:09:56 [CONQUESTSRV1] User interface test: local server is running!
+2024/4/28 11:24:44 [CONQUESTSRV1] 
+2024/4/28 11:24:44 [CONQUESTSRV1] UPACS THREAD 1: STARTED AT: Sun Apr 28 11:24:44 2024
+2024/4/28 11:24:44 [CONQUESTSRV1]  Calling Application Title : "local           "
+2024/4/28 11:24:44 [CONQUESTSRV1]  Called Application Title : "remote          "
+2024/4/28 11:24:44 [CONQUESTSRV1]  Application Context : "1.2.840.10008.3.1.1.1", PDU length: 16384
+2024/4/28 11:24:44 [CONQUESTSRV1]  Presentation Context 0 "1.2.840.10008.1.1" 1
+2024/4/28 11:24:44 [CONQUESTSRV1] C-Echo
+2024/4/28 11:24:44 [CONQUESTSRV1] UPACS THREAD 1: ENDED AT: Sun Apr 28 11:24:44 2024
+2024/4/28 11:24:44 [CONQUESTSRV1] UPACS THREAD 1: TOTAL RUNNING TIME: 0 SECONDS

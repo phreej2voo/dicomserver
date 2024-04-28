@@ -1,0 +1,177 @@
+<html>
+<script type="text/javascript">
+// Test conquest DICOM api extensions
+
+// Read json file from server
+function readJSON(url) {
+  var x = new XMLHttpRequest();
+  var settings;
+  x.onreadystatechange = function () {
+    if (x.readyState===4 && x.status===200) {
+      try {
+        settings = JSON.parse(x.responseText);
+      }
+      catch(e) {
+        settings = x.responseText;
+      }
+    }
+  }
+  if (url.indexOf('?')>=0)
+    x.open("GET", url + '&_=' + new Date().getTime(), false);
+  else
+    x.open("GET", url + '?_=' + new Date().getTime(), false);
+  try {
+  x.send();
+  } catch (error) {};
+  return settings;
+}
+// post json as form data to server
+function post(url, data, f) {
+  var data;
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", url, true);
+  const FD = new FormData();
+  for (const [name, value] of Object.entries(data)) {
+    FD.append(name, value);
+  }
+  xhr.onerror  = function () {
+    window.alert('failed to post');      
+  }
+  xhr.onreadystatechange = function() { // Call a function when the state changes.
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+      try {
+        data = JSON.parse(xhr.responseText);
+      }
+      catch(e) {
+        a = xhr.responseText;
+      }
+      f(data);
+    }	
+    else if (this.readyState === XMLHttpRequest.DONE && this.status !== 200) {
+      window.alert('failed to post');      
+    }
+  }
+  xhr.send(FD);
+}
+
+var uid='';
+
+function teststartscript() {
+  setInterval(function() {
+    if (uid!='') {
+      var p=readJSON("/api/dicom/rs/startscript/"+uid);
+      document.getElementById('startscript').innerHTML=p;
+      if (p==100) {uid='';document.getElementById('startscript').innerHTML='';}
+    }
+  }, 100);
+  post("/api/dicom/rs/startscript",
+    {script:"print('startscript');for i=1,50 do progress((i*1));sleep(100) end"}, 
+    function(t) 
+    { uid=t;
+    }
+  );
+}
+
+function testscript() {
+  post("/api/dicom/rs/script",
+    {script:"print('script'); return os.time();"}, 
+    function(t) 
+    { document.getElementById('_script').innerHTML=t;
+    }
+  );
+}
+
+function testmodalities() {
+  document.getElementById('modalities').innerHTML=readJSON('/api/dicom/rs/modalities')[0].ae;
+}
+
+function testecho() {
+  var ae=readJSON('/api/dicom/rs/modalities')[0].ae;
+  document.getElementById('echo').innerHTML=readJSON('/api/dicom/rs/modalities/'+ae);
+}
+
+function teststudies() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  document.getElementById('studies').innerHTML=studies;
+}
+
+function testseries() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  document.getElementById('series').innerHTML=series;
+}
+
+function testinstance() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var instance=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances')[0]["00080018"].Value;
+  document.getElementById('instance').innerHTML=instance;
+}
+
+function readstudies() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies);
+  document.getElementById('readstudies').innerHTML=data.length + ' bytes';
+}
+
+function readseries() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series);
+  document.getElementById('readseries').innerHTML=data.length + ' bytes';
+}
+
+function readinstance() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var instance=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances')[0]["00080018"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances/'+instance);
+  document.getElementById('readinstance').innerHTML=data.length + ' bytes';
+}
+
+function zipinstance() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var instance=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances')[0]["00080018"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances/'+instance+'/zip');
+  document.getElementById('zipinstance').innerHTML=data.length + ' bytes';
+}
+
+function frameinstance() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var instance=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances')[0]["00080018"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances/'+instance+'/frames/1');
+  document.getElementById('frameinstance').innerHTML=data.length + ' bytes';
+}
+
+function thumbnailinstance() {
+  var studies=readJSON('/api/dicom/rs/studies')[0]["0020000D"].Value;
+  var series=readJSON('/api/dicom/rs/studies/'+studies+'/series')[0]["0020000E"].Value;
+  var instance=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances')[0]["00080018"].Value;
+  var data=readJSON('/api/dicom/rs/studies/'+studies+'/series/'+series+'/instances/'+instance+'/thumbnail');
+  document.getElementById('thumbnailinstance').innerHTML=data.length + ' bytes';
+}
+
+</script>
+
+<form>
+  <table>
+  <tr><td><b>Item</b><td><b>Response</b></tr>
+  <tr><td><input type=button onclick=document.getElementById('dicom').innerHTML=readJSON('/api/dicom')>/api/dicom</input><td><div style="display:inline-block" id=dicom></div></tr>
+  <tr><td><input type=button onclick=teststartscript()>/api/dicom/rs/startscript</input> <td><div style="display:inline-block" id=startscript></div></tr>
+  <tr><td><input type=button onclick=testscript()>/api/dicom/rs/script</input> <td><div style="display:inline-block" id=_script></div></input></tr>
+  <tr><td><input type=button onclick=testmodalities()>/api/dicom/rs/modalities</input><td><div style="display:inline-block" id=modalities></div></tr>
+  <tr><td><input type=button onclick=testecho()>/api/dicom/rs/modalities/*first*</input><td><div style="display:inline-block" id=echo></div></tr>
+  <tr><td><input type=button onclick=teststudies()>/api/dicom/rs/studies</input><td><div style="display:inline-block" id=studies></div></tr>
+  <tr><td><input type=button onclick=testseries()>/api/dicom/rs/studies/*first*/series</input><td><div style="display:inline-block" id=series></div></tr>
+  <tr><td><input type=button onclick=testinstance()>/api/dicom/rs/studies/*first*/series/*first*/instances</input><td><div style="display:inline-block" id=instance></div></tr>
+  <tr><td><input type=button onclick=readstudies()>/api/dicom/rs/studies/*first*</input><td><div style="display:inline-block" id=readstudies></div></tr>
+  <tr><td><input type=button onclick=readseries()>/api/dicom/rs/studies/*first*/series/*first*</input><td><div style="display:inline-block" id=readseries></div></tr>
+  <tr><td><input type=button onclick=readinstance()>/api/dicom/rs/studies/*first*/series/*first*/instances/*first*</input><td><div style="display:inline-block" id=readinstance></div></tr>
+  <tr><td><input type=button onclick=frameinstance()>/api/dicom/rs/studies/*first*/series/*first*/instances/*first*/frames/1</input><td><div style="display:inline-block" id=frameinstance></div></tr>
+  <tr><td><input type=button onclick=zipinstance()>/api/dicom/rs/studies/*first*/series/*first*/instances/*first*/zip</input><td><div style="display:inline-block" id=zipinstance></div></tr>
+  <tr><td><input type=button onclick=thumbnailinstance()>/api/dicom/rs/studies/*first*/series/*first*/instances/*first*/thumbnail</input><td><div style="display:inline-block" id=thumbnailinstance></div></tr>
+  </table>
+</form>
+</html>
